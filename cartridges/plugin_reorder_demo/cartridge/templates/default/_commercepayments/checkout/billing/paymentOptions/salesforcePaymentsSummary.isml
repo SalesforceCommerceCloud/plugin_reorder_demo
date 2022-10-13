@@ -1,0 +1,26 @@
+<isif condition="${!!pdict.order.billing.payment.paymentMethod}">
+    <div class="payment-method">
+        <span>${pdict.order.billing.payment.paymentMethod.name}</span>
+    </div>
+    <div class="payment-credential">
+        ${pdict.order.billing.payment.paymentMethod.credential}
+    </div>
+    <isif condition="${!!pdict.order.billing.payment.paymentMethod.paymentId}">
+        <div class="payment-paymentid">
+            ${pdict.order.billing.payment.paymentMethod.paymentId}
+            <isif condition="${!!pdict.order.billing.payment.paymentMethod.paymentIdHelpText}">
+                <button type="button" class="info-icon">
+                    <span class="icon" aria-hidden="true">i</span>
+                    <span class="sr-only">${Resource.msg('button.help.assistive.text','common',null)}</span>
+                    <span class="tooltip d-none">
+                        ${pdict.order.billing.payment.paymentMethod.paymentIdHelpText}
+                    </span>
+                </button>
+            </isif>
+        </div>
+    </isif>
+<iselse>
+    <div class="payment-method">
+        <span>${Resource.msg('label.payment.method.unavailable','confirmation',null)}</span>
+    </div>
+</isif>

@@ -1,0 +1,8 @@
+<div class="row leading-lines gift-certificates-applied<isif condition="${pdict.order.totals.giftCertificatesApplied.value >= 0}"> hide-gift-certificates-applied</isif>">
+    <div class="col-6 start-lines">
+        <p class="order-receipt-label"><span>${Resource.msg('label.order.giftCard','confirmation',null)}</span></p>
+    </div>
+    <div class="col-6 end-lines">
+        <p class="text-right"><span class="gift-certificates-applied-total">${pdict.order.totals.giftCertificatesApplied.formatted}</span></p>
+    </div>
+</div>

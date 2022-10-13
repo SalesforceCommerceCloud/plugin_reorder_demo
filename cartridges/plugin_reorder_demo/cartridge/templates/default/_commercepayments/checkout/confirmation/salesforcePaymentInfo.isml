@@ -1,0 +1,16 @@
+<div>
+    <span>${pdict.order.billing.payment.paymentMethod.name}</span>
+</div>
+<div>
+    ${pdict.order.billing.payment.paymentMethod.credential}
+</div>
+<isif condition="${pdict.order.billing.payment.paymentMethod.paymentId}">
+    <div>
+        ${pdict.order.billing.payment.paymentMethod.paymentId}
+    </div>
+    <isif condition="${pdict.order.billing.payment.paymentMethod.paymentIdHelpText}">
+        <div>
+            ${pdict.order.billing.payment.paymentMethod.paymentIdHelpText}
+        </div>
+    </isif>
+</isif>
