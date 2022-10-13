@@ -1,4 +1,0 @@
-<isset name="paypalincludemessage" value="${true}" scope="page">
-<isset name="paypalamount" value="${product.paypalAmount}" scope="page">
-
-<isinclude template="_commercepayments/components/paypalMessaging" sf-toolkit="off"/>

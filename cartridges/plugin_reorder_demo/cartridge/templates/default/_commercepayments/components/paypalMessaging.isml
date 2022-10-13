@@ -1,5 +1,0 @@
-<isif condition="${paypalincludemessage}">
-    <div class="salesforce-paypal-messaging salesforce-paypal-messaging-hidden">
-        <div data-pp-message data-pp-amount="${paypalamount || ''}"></div>
-    </div>
-</isif>

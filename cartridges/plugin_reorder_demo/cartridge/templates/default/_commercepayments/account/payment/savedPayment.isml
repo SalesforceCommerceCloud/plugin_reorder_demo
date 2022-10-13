@@ -1,2 +1,0 @@
-<p>${payment.type}</p>
-<p>${payment.description}</p>
