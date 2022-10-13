@@ -1,0 +1,5 @@
+<fieldset class="salesforce-payments-fields">
+    <div class="salesforce-payments-element" data-placeorder="${URLUtils.url('CommercePaymentsCheckoutServices-PlaceOrder')}"></div>
+
+    <ispayment payment-request="${pdict.multiStepPaymentRequest}"></ispayment>
+</fieldset>

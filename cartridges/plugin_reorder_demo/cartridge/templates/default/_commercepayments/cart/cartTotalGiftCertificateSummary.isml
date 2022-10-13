@@ -1,0 +1,8 @@
+<div class="row gift-certificates-applied<isif condition="${pdict.totals.giftCertificatesApplied.value >= 0}"> hide-gift-certificates-applied</isif>">
+    <div class="col-8">
+        <p>${Resource.msg('label.gift.card','cart',null)}</p>
+    </div>
+    <div class="col-4">
+        <p class="text-right gift-certificates-applied-total">${pdict.totals.giftCertificatesApplied.formatted}</p>
+    </div>
+</div>

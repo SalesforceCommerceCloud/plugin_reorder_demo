@@ -1,0 +1,28 @@
+<div class="paymentMethods">
+	<!-- Rows for Saved Payment Methods -->
+	<isloop items="${pdict.paymentMethods}" var="paymentMethod">
+	    <div class="row justify-content-center" id="id-${paymentMethod.ID}">
+	        <div class="col-sm-8 col-md-6">
+	            <div class="card">
+	                <div class="card-body card-body-positioning">
+	                    <div class="card-info-group">
+	                        <isset name="payment" value="${paymentMethod}" scope="page">
+	                        <isinclude template="account/payment/savedPayment"/>
+	                    </div>
+	                    <button
+	                        type="button"
+	                        class="remove-btn remove-payment-method btn-light"
+	                        data-toggle="modal"
+	                        data-target="#deletePaymentModal"
+	                        data-id="${paymentMethod.ID}"
+	                        data-description="${paymentMethod.description}"
+	                        data-url="${pdict.actionUrl}"
+	                        aria-label="${Resource.msg('label.payment.deletepayment','payment',null)}">
+	                        &times;
+	                    </button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</isloop>
+</div>

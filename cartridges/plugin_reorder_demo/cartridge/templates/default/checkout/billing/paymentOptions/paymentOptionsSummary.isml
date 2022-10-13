@@ -1,0 +1,2 @@
+<isscript>var includeHelper = require('~/cartridge/scripts/includeHelper');</isscript>
+<isinclude template="_commercepayments/checkout/billing/paymentOptions/paymentOptionsSummary" />
