@@ -1,57 +1,15 @@
-.hide-gift-certificates-applied {
-    display: none;
-}
-
-.gift-certificates-applied-total {
-    color: $danger;
-}
-
-.salesforce-payments-errors {
-    font-size: 0.8em;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
-    border: 1px solid lightblue;
-    border-radius: $border-radius;
-    background: #fee url(../../images/exclamation.svg) 0.5rem 0.5rem/1rem no-repeat;
-}
-
-.salesforce-payments-errors:empty {
-    display: none;
-}
-
-.salesforce-paymentrequest-element-errors {
-    margin-top: 0.75rem;
-}
-
-.salesforce-paymentrequest-element[disabled] {
-    display: none;
-}
-
-.salesforce-paymentrequest-element div:not(:first-child) {
-    margin-top: 1em;
-    padding: 0;
-}
-
-.salesforce-secure-payment {
-    margin-left: 1.2rem;
-    font-size: 0.8em;
-    padding: 0.3rem 0.5rem 0.5rem 1.5rem;
-    background: url(../../images/padlock.svg) no-repeat;
-}
-
-.salesforce-paymentrequest-element-skeletons {
-    display: none;
-}
-
-.salesforce-paypal-messaging {
-    height: 4rem;
-    padding: 1.1rem 0 0;
-}
-
-.salesforce-paypal-messaging-hidden {
-    visibility: hidden;
-}
-
 .reorder-confirmation {
     margin: auto;
     margin-top: 20%;
+}
+
+.product-tile .swatch-circle {
+    width: 1.8em;
+    height: 1.8em;
+    background: #fff;
+    border-radius: 0.9em;
+    border: 0.063em solid rgba(0,0,0,.3);
+    display: inline-block;
+    margin-right: 0.313em;
+    position: relative;
 }

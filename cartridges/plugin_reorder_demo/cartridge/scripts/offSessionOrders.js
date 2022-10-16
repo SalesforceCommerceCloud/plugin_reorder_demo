@@ -11,7 +11,7 @@ function createOrder(customer) {
     var Transaction = require('dw/system/Transaction');
 
     var basketCalculationHelpers = require('*/cartridge/scripts/helpers/basketCalculationHelpers');
-    var configurationHelper = require('~/cartridge/scripts/configurationHelper');
+    var configurationHelper = require('*/cartridge/scripts/configurationHelper');
     var COHelpers = require('*/cartridge/scripts/checkout/checkoutHelpers');
     var validationHelpers = require('*/cartridge/scripts/helpers/basketValidationHelpers');
 

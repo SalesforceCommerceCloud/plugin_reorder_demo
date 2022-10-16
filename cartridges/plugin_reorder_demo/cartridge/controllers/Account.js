@@ -6,7 +6,7 @@ server.extend(module.superModule);
 server.append('Show', function (req, res, next) {
     var URLUtils = require('dw/web/URLUtils');
     var AccountModel = require('*/cartridge/models/account');
-    var configurationHelper = require('~/cartridge/scripts/configurationHelper');
+    var configurationHelper = require('*/cartridge/scripts/configurationHelper');
 
     configurationHelper.appendConfiguration(res);
     var viewData = res.getViewData();

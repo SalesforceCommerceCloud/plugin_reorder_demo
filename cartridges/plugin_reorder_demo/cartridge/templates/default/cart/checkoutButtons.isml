@@ -1,2 +1,0 @@
-<isscript>var includeHelper = require('~/cartridge/scripts/includeHelper');</isscript>
-<isinclude template="${includeHelper.conditional(pdict.commercePaymentsConfiguration.expressCheckoutEnabled, 'cart/checkoutButtons')}" />
