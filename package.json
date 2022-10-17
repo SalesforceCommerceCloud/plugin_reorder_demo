@@ -51,6 +51,7 @@
   },
   "dependencies": {},
   "paths": {
-    "base": "../storefront-reference-architecture/cartridges/app_storefront_base/"
+    "base": "../storefront-reference-architecture/cartridges/app_storefront_base/",
+    "commercepayments": "../plugin_commercepayments/cartridges/plugin_commercepayments"
   }
 }
